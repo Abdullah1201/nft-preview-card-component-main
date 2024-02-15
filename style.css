@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+}
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--Very-dark-blue-main-BG);
+}
+.cardBox{
+    width: 100%;
+    max-width: 350px;
+    background: var(--Very-dark-blue-card-BG);
+    margin: 30px auto 0px;
+    padding: 20px 18px 8px;
+    border-radius: 10px;
+}
+
+.alldetails img{
+    width: 314px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+.alldetails h2{
+    font-size: 20px;
+    color: var(--White);
+}
+
+.alldetails p{
+    font-size: 16px;
+    color: var(--Soft-blue);
+}
+.time{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.time li{
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+   
+}
+.time li:nth-child(1)::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(images/icon-ethereum.svg);
+    /* background-size: cover; */
+    background-position: center;
+    left: -20px;
+    top: 3px;
+
+}
+.time li:nth-child(2)::before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url(images/icon-clock.svg);
+    /* background-size: cover; */
+    background-position: center;
+    left: -20px;
+    top: 3px;
+
+}
+.time li:nth-child(1){
+    color: var(--Cyan);
+    margin-left: 20px;
+}
+.time li:nth-child(2){
+    color: var(--Soft-blue);
+}
+.progressBar{
+    background: var(--Very-dark-blue-line);
+    padding: 0 18px;
+    height: 2px;
+    margin-bottom: 18px;
+}
+.footerImage{
+    display: flex;
+    gap: 10px;
+    /* align-items: center; */
+ 
+}
+.footerImage img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--Soft-blue);
+}
+.footerImage h5{
+    margin-top: 9px;
+    color: var(--Soft-blue);
+    font-weight: 400;
+
+}
+.footerImage span{
+    margin-top: 9px;
+    color: var(--White);
+    font-weight: 400;
+
+}
